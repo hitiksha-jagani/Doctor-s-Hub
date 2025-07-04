@@ -1,0 +1,285 @@
+.profile-container {
+  width: 100%;
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.profile-box{
+  width: 90%;
+  margin-left: 50px;
+}
+
+.profile-box, .appointments-box {
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.profile-box h3, .appointments-box h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.25rem;
+  color: #333;
+}
+
+.profile-box input,
+.profile-box select,
+/* .profile-box button, */
+.form-button {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+/* .profile-box button:hover, */
+.form-button.save:hover {
+  background-color: #1b4f72;
+}
+
+.form-button.cancel {
+  background-color: #dc3545;
+  color: white;
+}
+
+.form-button.cancel:hover {
+  background-color: #c82333;
+}
+
+.form-button {
+  width: 30%;
+  margin-right: 4%;
+}
+
+.form-button:last-child {
+  margin-right: 0;
+}
+
+.profile-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile-buttons .form-button {
+  width: 48%;
+}
+
+.appointments ul {
+  padding-left: 0;
+  margin-top: 20px;
+}
+
+.appointments li {
+  margin-bottom: 15px;
+  padding: 15px;
+  background-color: #f1f1f1;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.appointment-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.appointment-actions button {
+  background-color: #dc3545;
+  color: white;
+  cursor: pointer;
+}
+
+.appointment-actions button:hover {
+  background-color: #c82333;
+}
+
+.spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+button.logout {
+  background-color: #007bff;
+  color: white;
+  margin-right: 15px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button.logout:hover {
+  background-color: #0056b3;
+}
+
+button.delete {
+  background-color: #dc3545;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button.delete:hover {
+  background-color: #c82333;
+}
+
+button{
+  margin-top: 25px;
+  margin-right: 25px;
+  width: 250px;
+  padding: 12px 30px;
+  background-color: #2e86de;
+  color: #fff;
+  font-size: 1.2rem; /* Increased font size */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #1b4f72;
+}
+
+.appointments-box {
+  background-color: #f9f9f9;
+  padding: 25px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 30px;
+}
+
+.appointments-box h3 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.appointments-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.appointment-card {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease;
+}
+
+.appointment-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.appointment-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.appointment-row:last-child {
+  border-bottom: none;
+}
+
+.label {
+  font-weight: 600;
+  color: #555;
+}
+
+.appointment-actions {
+  text-align: right;
+  margin-top: 15px;
+}
+
+.appointment-actions button {
+  background-color: #dc3545;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.appointment-actions button:hover {
+  background-color: #b52a3a;
+}
+
+.appointments-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.appointment-card {
+  width: 45%;
+  background-color: #f1f1f1;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease;
+}
+
+.appointment-card:hover {
+  transform: translateY(-3px);
+}
+
+.password-container {
+  position: relative;
+  width: 80%;
+}
+
+.password-container .login-input {
+  padding-right: 35px; /* space for eye icon */
+  height: 40px; /* fixed height (match your input size if different) */
+  font-size: 14px; /* optional: control input text size */
+}
+
+.eye-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #555;
+  font-size: 16px; /* 👈 make the icon smaller */
+  height: 20px; /* 👈 match height */
+  width: 20px; /* 👈 match width */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.password-container {
+  display: flex;
+  align-items: center;
+}
+
+.password-validations {
+  margin-top: 10px;
+  grid-column: span 2; /* Ensures validations take full width */
+}
+
+.eye-icon {
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.form-button {
+  margin-top: 10px;
+}

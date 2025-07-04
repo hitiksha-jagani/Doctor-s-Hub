@@ -1,0 +1,72 @@
+/* General container styling */
+.generate-report-container {
+    text-align: center;
+    padding: 30px;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    margin: 30px auto;
+    background-color: #ffffff;
+  }
+  
+  .title {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .button-container {
+    margin-bottom: 30px;
+  }
+  
+  .report-btn {
+    padding: 12px 25px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s;
+  }
+  
+  .report-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Chart container and image styling */
+  .chart-container {
+    margin-top: 20px;
+  }
+  
+  .report-chart {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .download-btn-container {
+    margin-top: 15px;
+  }
+  
+  .download-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .download-btn:hover {
+    background-color: #218838;
+  }
+  

@@ -1,0 +1,62 @@
+/* Navbar Container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: none;
+    padding: 10px 20px;
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+  }
+  
+  /* Left Section (Logo and Links) */
+  .navbar-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-logo {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 20px;
+    border: 2px solid #007bff; /* Add a border with your desired color */
+    border-radius: 5px; 
+  }
+  
+  .navbar-link {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-link:hover {
+    color: #007bff;
+  }
+  
+  /* Right Section (Profile and Auth Links) */
+  .navbar-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-profile {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    /* border: 2px solid #007bff; */
+    object-fit: cover;
+    cursor: pointer;
+    margin-left: 10px;
+    background-color: rgb(103, 123, 112);
+  }
+  
+  .navbar-right .navbar-link {
+    margin-right: 10px;
+  }
+  
+  .navbar-right .navbar-link:last-child {
+    margin-right: 0;
+  }
+  

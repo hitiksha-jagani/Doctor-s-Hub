@@ -1,0 +1,58 @@
+.admin-list-container {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+  }
+  
+  .admin-list-container h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+  }
+  
+  .admin-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  
+  .admin-card {
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.05);
+  }
+  
+  .admin-card p {
+    margin: 8px 0;
+  }
+  
+  .admin-card input, .admin-card select {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+  
+  .actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .actions button {
+    background-color: #2e86de;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 0.95rem;
+  }
+  
+  .actions button:hover {
+    background-color: #1b4f72;
+  }
+  

@@ -1,0 +1,192 @@
+/* Patient List Styles */
+.patient-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Patient Actions */
+.patient-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.patient-filters {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.search-box {
+  position: relative;
+}
+
+.search-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #64748b;
+}
+
+.search-box input {
+  padding: 10px 10px 10px 40px;
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
+  width: 250px;
+  font-size: 14px;
+}
+
+.filter-select {
+  padding: 10px 15px;
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
+  background-color: white;
+  font-size: 14px;
+  min-width: 150px;
+}
+
+.add-patient-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #22c55e;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.add-patient-btn:hover {
+  background-color: #16a34a;
+}
+
+/* Patients Table */
+.patients-table-container {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.patients-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.patients-table th,
+.patients-table td {
+  padding: 15px 20px;
+  text-align: left;
+}
+
+.patients-table th {
+  background-color: #f8fafc;
+  color: #64748b;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.patients-table tbody tr {
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.patients-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.patient-cell {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.patient-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.patient-name {
+  font-weight: 500;
+}
+
+.contact-cell {
+  display: flex;
+  flex-direction: column;
+}
+
+.email {
+  font-size: 14px;
+}
+
+.phone {
+  font-size: 12px;
+  color: #64748b;
+  margin-top: 3px;
+}
+
+.age-gender-cell {
+  display: flex;
+  flex-direction: column;
+}
+
+.age {
+  font-size: 14px;
+}
+
+.gender {
+  font-size: 12px;
+  color: #64748b;
+  margin-top: 3px;
+}
+
+.address-cell {
+  max-width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.last-visit-cell {
+  font-size: 14px;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.action-btn {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.action-btn.view {
+  background-color: rgba(59, 130, 246, 0.1);
+  color: #3b82f6;
+}
+
+.action-btn.edit {
+  background-color: rgba(249, 115, 22, 0.1);
+  color: #f97316;
+}
+
+.action-btn.delete {
+  background-color: rgba(239, 68, 68, 0.1);
+  color: #ef4444;
+}

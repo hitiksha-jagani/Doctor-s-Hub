@@ -1,0 +1,18 @@
+# Java backend
+/target/
+/*.iml
+.idea/
+*.log
+
+# React frontend
+node_modules/
+build/
+.env
+
+# General
+.DS_Store
+*.class
+*.jar
+*.war
+*.zip
+

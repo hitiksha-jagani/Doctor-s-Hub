@@ -1,0 +1,107 @@
+/* src/pages/DoctorProfile.css */
+
+.doctor-profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f4f6f9;
+    min-height: 100vh;
+    justify-content: center;
+  }
+  
+  .doctor-details {
+    background-color: #ffffff;
+    padding: 40px 40px; /* Increased padding for more space */
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 700px; /* Slightly larger width for more space */
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; /* Center the entire content inside the box */
+  }
+  
+  .doctor-name {
+    font-size: 2.5rem; /* Increased font size for the doctor name */
+    color: #2c3e50;
+    margin-bottom: 30px; /* Increased margin between the name and details */
+    text-align: center;
+  }
+  
+  .doctor-info-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px; /* Increased space between rows */
+    font-size: 1.2rem;
+    color: #34495e;
+    width: 100%; /* Ensure the row takes up full width */
+    max-width: 600px; /* Limit the row width */
+    text-align: left;
+  }
+  
+  .doctor-info-heading {
+    font-weight: bold;
+    width: 45%; /* Adjust width for balance between columns */
+    padding-right: 20px; /* Space between heading and value */
+  }
+  
+  .doctor-info-value {
+    width: 55%; /* Ensure value takes up most of the space */
+  }
+  
+  .book-appointment-btn {
+    margin-top: 30px; /* Increased space between details and button */
+    padding: 14px 35px;
+    font-size: 1.3rem; /* Larger font size for the button */
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .book-appointment-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .reviews-section {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+  }
+  
+  .review-card {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .write-review-btn {
+    margin-top: 15px;
+    padding: 10px 25px;
+    font-size: 1.1rem;
+    background-color: #2e86de;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .write-review-btn:hover {
+    background-color: #1b4f72;
+  }
+  

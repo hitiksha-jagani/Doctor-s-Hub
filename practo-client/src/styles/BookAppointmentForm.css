@@ -1,0 +1,290 @@
+
+
+
+.book-appointment-container {
+  max-width: 700px;
+  margin: 80px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+}
+
+/* .book-appointment-title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 25px;
+  text-align: center;
+} */
+
+/* Container for available days - split into 2 columns */
+.day-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);  /* 2 columns */
+  gap: 12px;
+  justify-items: center;  /* Center items in grid */
+  margin-top: 20px;
+}
+
+/* Container for time slots - split into 2 columns */
+.time-slot-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);  /* 2 columns */
+  gap: 12px;
+  justify-items: center;  /* Center items in grid */
+  margin-top: 10px;
+}
+
+/* Make sure to wrap the buttons and labels with even distribution if there are 6 items */
+.day-grid button,
+.time-slot-grid label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  font-size: 16px;
+  width: 300px;
+}
+
+/* Responsive: Stack columns on small screens (less than 600px) */
+@media (max-width: 600px) {
+  .day-grid,
+  .time-slot-grid {
+    grid-template-columns: 1fr;  /* Stack into 1 column on small screens */
+  }
+}
+
+
+.book-appointment-title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+/* New class for section headings (like Select Day / Time Slot heading) */
+.section-heading {
+  font-size: 20px;
+  font-weight: 500;
+  color: #34495e;
+  margin: 25px 0 15px;
+  text-align: center;
+}
+
+/* Optional: Customize this more if needed */
+.time-slot-header {
+  color: #2c3e50;
+}
+
+.available-day-btn {
+  margin: 8px 6px;
+  padding: 10px 16px;
+  border: 2px solid #3498db;
+  background-color: #ecf6fc;
+  color: #3498db;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.available-day-btn:hover {
+  background-color: #3498db;
+  color: #fff;
+}
+
+.available-day-btn.selected {
+  background-color: #3498db;
+  color: #fff;
+  font-weight: 600;
+  border: 2px solid #2980b9;
+}
+
+.time-slot-header {
+  margin-top: 30px;
+  /* font-size: 20px; */
+  color: #2c3e50;
+  font-weight: 500;
+}
+
+.time-slot-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.time-slot-label {
+  background-color: #f1f1f1;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 14px;
+}
+
+.time-slot-label:hover {
+  background-color: #dfefff;
+  border-color: #3498db;
+}
+
+.time-slot-label.selected {
+  background-color: #3498db;
+  color: #fff;
+  border-color: #2980b9;
+}
+
+.time-slot-radio {
+  display: none;
+}
+
+.payment-btn-container {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.payment-btn {
+  background-color: #27ae60;
+  color: #fff;
+  padding: 12px 26px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.payment-btn:hover {
+  background-color: #1e8449;
+}
+
+@media (max-width: 600px) {
+  .book-appointment-container {
+    padding: 20px;
+  }
+
+  .available-day-btn,
+  .time-slot-label {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+
+  .book-appointment-title {
+    font-size: 22px;
+  }
+}
+
+/* BookAppointment.css */
+
+.appointment-container {
+  padding: 30px;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.appointment-heading {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.section-title {
+  font-size: 22px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.day-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.day-button {
+  padding: 10px 15px;
+  background-color: #f0f0f0;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.day-button:hover {
+  background-color: #d0e7ff;
+}
+
+.day-button.selected {
+  background-color: #007bff;
+  color: white;
+  border: 1px solid #007bff;
+}
+
+.time-slots {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.time-slot-label {
+  background-color: #eaf4f9;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.time-slot-label:hover {
+  background-color: #d4eaf7;
+}
+
+.payment-button-container {
+  margin-top: 30px;
+}
+
+.payment-button {
+  padding: 12px 25px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.payment-button:hover {
+  background-color: #218838;
+}
+
+.payment-button:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+button{
+  margin-top: 25px;
+  padding: 12px 30px;
+  background-color: #2e86de;
+  color: #fff;
+  font-size: 1.2rem; /* Increased font size */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #1b4f72;
+}

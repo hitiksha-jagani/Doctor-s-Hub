@@ -1,0 +1,56 @@
+.doctor-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+  border: 1px solid #e0e0e0;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%; /* Full width of the grid cell */
+  max-width: 500px; /* Increased max-width */
+  height: 400px; /* Increased height */
+  box-sizing: border-box;
+}
+
+.doctor-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
+}
+
+.doctor-name {
+  font-size: 2rem; /* Increased font size */
+  color: #2c3e50;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.doctor-info-grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 15px 25px;
+  width: 100%;
+  justify-content: center;
+}
+
+.label-column p,
+.value-column p {
+  margin: 8px 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.label-column p {
+  font-weight: 600;
+  color: #34495e;
+  text-align: left;
+  font-size: 1.1rem; /* Increased font size */
+}
+
+.value-column p {
+  color: #2e86de;
+  text-align: left;
+  font-size: 1.1rem; /* Increased font size */
+}
+

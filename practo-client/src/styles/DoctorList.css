@@ -1,0 +1,15 @@
+.doctor-list-container {
+    padding: 30px;
+    /* background-color: #f2f4f7; */
+    display: flex;
+    justify-content: center;
+  }
+  
+  .doctor-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns per row */
+    gap: 30px; /* Equal spacing between cards */
+    max-width: 1100px; /* Container max width */
+    width: 100%;
+  }
+  
